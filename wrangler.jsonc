@@ -11,7 +11,12 @@
 		{
 			"class_name": "MyContainer",
 			"image": "./Dockerfile",
-			"min_instances": 10
+			"min_instances": 10,
+            "rollout_active_grace_period": 300,
+            "rollout_step_percentage": [
+              10,
+              100
+            ]
 		}
 	],
 	"durable_objects": {
